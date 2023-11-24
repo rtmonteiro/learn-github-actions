@@ -1,0 +1,17 @@
+name: learn-variables
+on: [push]
+env:
+  MY_NAME: Ryan
+jobs:
+  greet:
+    runs-on: macos-latest
+    env:
+      Greetings: Hello
+    steps:
+      - name: Greeting
+        run: echo "$Greeting $First_Name. My name is $MY_NAME. ${{ vars.WELCOME_TEXT }}"
+        env:
+          First_name: Rogério
+      - name: Check OS
+        if: runner.os != 'Windows'
+        run: echo "I see you run $RUNNER_OS" instead of windows. Noice! :)"
