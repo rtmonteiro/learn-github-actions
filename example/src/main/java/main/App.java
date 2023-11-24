@@ -1,4 +1,4 @@
-package artifactId.src.main.java.main;
+package main;
 
 /**
  * Hello world!
