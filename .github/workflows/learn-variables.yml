@@ -14,4 +14,4 @@ jobs:
           First_name: Rogério
       - name: Check OS
         if: runner.os != 'Windows'
-        run: echo "I see you run $RUNNER_OS" instead of windows. Noice! :)"
+        run: echo "I see you run $RUNNER_OS instead of windows. Noice! :)"
